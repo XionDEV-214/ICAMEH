@@ -7,6 +7,7 @@ import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.api.data.RotationState;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
 import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
+import com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties;
 import com.gregtechceu.gtceu.common.machine.multiblock.part.EnergyHatchPartMachine;
 import com.gregtechceu.gtceu.utils.FormattingUtil;
 import net.minecraft.network.chat.Component;
@@ -52,7 +53,8 @@ public class ICAMEHMachines {
                         .machine(name, info -> new InfinitatisCellMachine(info, finalTier, finalAmperage))
                         .tier(finalTier)
                         .rotationState(RotationState.ALL)
-                        .langValue(VNF[finalTier] + " Infinitatis Cell " + finalAmperage + "A")
+                        .langValue(VCF[finalTier] + VN[finalTier] + " Infinitatis Cell " + String.format("%,d", finalAmperage) + "A" + "§r")
+                        .modelProperty(GTMachineModelProperties.IS_FORMED, false)
                         .model((ctx, prov, builder) -> {})
                         .tooltips(
                                 Component.translatable("icameh.machine.infinitatis_cell.tooltip"),
@@ -79,7 +81,8 @@ public class ICAMEHMachines {
                         .tier(finalTier)
                         .rotationState(RotationState.ALL)
                         .abilities(PartAbility.INPUT_ENERGY)
-                        .langValue(VNF[finalTier] + " " + finalAmperage + "A Energy Hatch")
+                        .langValue(VCF[finalTier] + VN[finalTier] + " " + String.format("%,d", finalAmperage) + "A Energy Hatch" + "§r")
+                        .modelProperty(GTMachineModelProperties.IS_FORMED, false)
                         .model((ctx, prov, builder) -> {})
                         .tooltips(
                                 Component.translatable("gtceu.universal.tooltip.voltage_in",

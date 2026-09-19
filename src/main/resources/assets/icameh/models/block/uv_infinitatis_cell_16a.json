@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "icameh:uv_infinitatis_cell_16a",
+  "replaceable_textures": ["bottom", "top", "side"],
+  "variants": {
+    "is_formed=false": {
+      "model": {
+        "parent": "gtceu:block/machine/part/energy_output_hatch_16a",
+        "textures": {
+          "bottom": "gtceu:block/casings/voltage/uv/bottom",
+          "top": "gtceu:block/casings/voltage/uv/top",
+          "side": "gtceu:block/casings/voltage/uv/side"
+        }
+      }
+    },
+    "is_formed=true": {
+      "model": {
+        "parent": "gtceu:block/machine/part/energy_output_hatch_16a",
+        "textures": {
+          "bottom": "gtceu:block/casings/voltage/uv/bottom",
+          "top": "gtceu:block/casings/voltage/uv/top",
+          "side": "gtceu:block/casings/voltage/uv/side"
+        }
+      }
+    }
+  }
+}

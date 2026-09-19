@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "icameh:block/uev_energy_input_hatch_4096a", "x": 90 },
+    "facing=east": { "model": "icameh:block/uev_energy_input_hatch_4096a", "y": 90 },
+    "facing=north": { "model": "icameh:block/uev_energy_input_hatch_4096a" },
+    "facing=south": { "model": "icameh:block/uev_energy_input_hatch_4096a", "y": 180 },
+    "facing=up": { "model": "icameh:block/uev_energy_input_hatch_4096a", "x": 270, "gtceu:z": 180 },
+    "facing=west": { "model": "icameh:block/uev_energy_input_hatch_4096a", "y": 270 }
+  }
+}

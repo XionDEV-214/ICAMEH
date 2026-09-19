@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "icameh:iv_energy_input_hatch_4096a",
+  "replaceable_textures": ["bottom", "top", "side"],
+  "variants": {
+    "is_formed=false": {
+      "model": {
+        "parent": "gtceu:block/machine/part/energy_input_hatch_64a",
+        "textures": {
+          "bottom": "gtceu:block/casings/voltage/iv/bottom",
+          "top": "gtceu:block/casings/voltage/iv/top",
+          "side": "gtceu:block/casings/voltage/iv/side"
+        }
+      }
+    },
+    "is_formed=true": {
+      "model": {
+        "parent": "gtceu:block/machine/part/energy_input_hatch_64a",
+        "textures": {
+          "bottom": "gtceu:block/casings/voltage/iv/bottom",
+          "top": "gtceu:block/casings/voltage/iv/top",
+          "side": "gtceu:block/casings/voltage/iv/side"
+        }
+      }
+    }
+  }
+}

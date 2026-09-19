@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "icameh:block/uev_infinitatis_cell_16a", "x": 90 },
+    "facing=east": { "model": "icameh:block/uev_infinitatis_cell_16a", "y": 90 },
+    "facing=north": { "model": "icameh:block/uev_infinitatis_cell_16a" },
+    "facing=south": { "model": "icameh:block/uev_infinitatis_cell_16a", "y": 180 },
+    "facing=up": { "model": "icameh:block/uev_infinitatis_cell_16a", "x": 270, "gtceu:z": 180 },
+    "facing=west": { "model": "icameh:block/uev_infinitatis_cell_16a", "y": 270 }
+  }
+}
